@@ -56,7 +56,7 @@ selectionSort(A[], n):
 
 <br/>
 
-## <span id="merge">병합 정렬 / Selection Sort</span>
+## <span id="merge">병합 정렬 / Merge Sort</span>
 
 > 병합 정렬은 배열을 더 작은 하위 배열로 나누고 각 하위 배열을 정렬한 다음 정렬된 하위 배열을 다시 병합하여 최종 정렬된 배열을 형성하는 정렬 알고리즘이다.
 
