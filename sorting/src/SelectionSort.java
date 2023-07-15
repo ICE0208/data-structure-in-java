@@ -20,13 +20,13 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
-        System.out.print("Original Array:");
+        System.out.print("Original Array: ");
         for (int value : arr) {
             System.out.print(value + " ");
         }
 
         sort(arr);
-        System.out.print("\n\nSorted Array:");
+        System.out.print("\n\nSorted Array: ");
         for (int value : arr) {
             System.out.print(value + " ");
         }
