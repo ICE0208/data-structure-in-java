@@ -2,4 +2,4 @@
 
 ## 📍 목차
 
-[📊 Sorting]
+[📊 Sorting](./sorting/README.md)
