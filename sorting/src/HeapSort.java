@@ -1,11 +1,15 @@
 public class HeapSort {
     public static void sort(int[] arr) {
+        // 처음에 배열을 최대힙으로 구성한다.
         buildHeap(arr, arr.length - 1);
+
+        // 최대값을 맨 마지막 위치로 옮기고 최대값을 제외한 요소를 대상으로 반복한다.
         for (int last = arr.length - 1; last > 0; last--) {
             arr[last] = deleteMax(arr, last);
         }
     }
 
+    // 최대힙 만들기
     private static void buildHeap(int[] arr, int last) {
         int start = (last - 1) / 2;
 
@@ -15,6 +19,7 @@ public class HeapSort {
 
     }
 
+    // 최대값을 리턴, 루트를 맨 마지막 요소로 대체하고 다시 최대힙으로 구성
     private static int deleteMax(int[] arr, int last) {
         int max = arr[0];
         arr[0] = arr[last];
