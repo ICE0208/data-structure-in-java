@@ -15,7 +15,7 @@
 - [병합 정렬](#merge)
 - [퀵 정렬](#quick)
 - [힙 정렬](#heap)
-- 셸 정렬
+- [셸 정렬](#shell)
 
 ### 특수 정렬
 
@@ -272,6 +272,52 @@ heapSort():
 ### 단점
 
 이상적인 경우에 다른 $O(NlogN)$의 시간 복잡도를 가진 정렬과 비교했을 때 시간이 더 오래 걸린다.
+
+<p align="right"><a href="#top">⬆️Top</a></p>
+
+---
+
+<br/>
+
+## <span id="shell">셸 정렬 / Shell Sort</span>
+
+> 셸 정렬은 특정한 gap 크기로 나우어 점진적으로 원소를 정렬하고, gap 크기를 점차 줄여 최종적으로 삽입 정렬을 통해 완전히 정렬하는 향상된 알고리즘이다. 적절한 gap 크기를 통해 삽입 정렬보다 빠른 정렬 성능을 제공한다.
+
+### 로직
+
+1. gap 크기를 설정한다.
+2. 각 간격 별로 분류된 부분 리스트들을 삽입 정렬을 통해 정렬한다.
+3. 각 부분 리스트의 정렬이 끝나면 gap을 줄이고 반복한다. (gap>0일 때)
+
+### 수도 코드
+
+```
+shellSort(A[]):
+    gap <- A.length / 2
+    while (gap > 0)
+        for k <- 0 to gap-1
+        stepInsertionSort(A, k, gap)
+    gap <- gap/2
+
+stepInsertionSort(A[], k, gap):
+    for(i <- k+gap; i < A.length; i <- i+gap)
+        insertionItem <- A[i]
+
+        j <- i-gap
+        while(0 <= j and A[j] > insertionItem)
+            A[j+gap] <- arr[j]
+            j <- j-gap
+        arr[j+gap] <- insertionItem
+
+```
+
+### 장점
+
+추가적인 메모리 사용이 거의 없으며 일반적인 삽입 정렬에 비해 더 빠른 정렬 속도를 제공한다.
+
+### 단점
+
+간격을 잘못 설정할 경우 성능이 급격히 저하될 수 있다.
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
