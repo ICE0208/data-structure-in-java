@@ -378,9 +378,17 @@ stepInsertionSort(A[], k, gap):
 
 추가적인 메모리 사용이 거의 없으며 일반적인 삽입 정렬에 비해 더 빠른 정렬 속도를 제공한다.
 
+> 10만 개 배열 테스트
+>
+> ![insVsShell](./img/insVsShell.png)
+
 ### 단점
 
-간격을 잘못 설정할 경우 성능이 급격히 저하될 수 있다.
+간격을 잘못 설정할 경우 성능이 급격히 저하될 수 있다. 또한 정렬할 배열의 크기가 작은 경우에는 일반 삽입 정렬보다 느릴 수 있다.
+
+> 100개 배열 테스트
+>
+> ![insVsShell2](./img/insVsShell2.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
