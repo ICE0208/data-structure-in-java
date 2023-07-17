@@ -265,9 +265,13 @@ partition(A[], p, r):
 
 일반적인 상황에서 평균적으로 $O(N*logN)$의 시간이 소요되어 매우 빠르게 정렬할 수 있다. 또한 재귀 호출에 의한 스택 메모리를 제외하고 추가적인 메모리가 거의 필요하지 않다.
 
+![selVsQuick2](./img/selVsQuick2.png)
+
 ### 단점
 
 이미 정렬되어 있거나, 동일한 원소가 많이 존재하는 경우에 시간이 오래 걸린다. 최악의 경우 $O(N^2)$의 시간이 소요된다.
+
+![selVsQuick](./img/selVsQuick.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
