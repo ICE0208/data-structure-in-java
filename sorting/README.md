@@ -143,6 +143,8 @@ InsertionSort(A[]):
 
 시간 복잡도가 $O(N^2)$으로 정렬할 배열의 크기가 크다면 매우 불리하다.
 
+![insVsQuick](./img/insVsQuick.png)
+
 <p align="right"><a href="#top">⬆️Top</a></p>
 
 ---
