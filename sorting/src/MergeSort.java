@@ -14,6 +14,10 @@ public class MergeSort {
         }
     }
 
+    public static void sort(int[] arr) {
+        sort(arr, 0, arr.length - 1);
+    }
+
     private static void merge(int[] arr, int p, int q, int r) {
         // 병합할 각 배열의 첫 번째 원소부터 마지막 원소까지 순서대로 비교하며 작은 원소를 임시 배열에 추가한다.
         int[] tmp = new int[arr.length];
@@ -60,5 +64,4 @@ public class MergeSort {
             System.out.print(value + " ");
         }
     }
-
 }

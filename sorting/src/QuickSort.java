@@ -12,6 +12,10 @@ public class QuickSort {
         }
     }
 
+    public static void sort(int[] arr) {
+        sort(arr, 0, arr.length - 1);
+    }
+
     private static int partition(int[] arr, int p, int r) {
         // 마지막 원소를 pivot으로 지정한다.
         int pivot = arr[r];
