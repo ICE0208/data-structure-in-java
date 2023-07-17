@@ -60,7 +60,7 @@ selectionSort(A[], n):
 
 정렬을 위한 비교 횟수가 많으며, $O(N^2)$이라는 시간 복잡도를 갖기 때문에 많은 데이터를 정렬해야 하는 경우에 불리하다.
 
-![selVsQuick](./img/selVsQuick2.png)
+![selVsQuick2](./img/selVsQuick2.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
@@ -99,6 +99,8 @@ bubbleSort(A[]):
 ### 단점
 
 시간 복잡도가 $O(N^2)$으로 굉장히 비효율적이다.
+
+![bubVsQuick](./img/bubVsQuick.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
