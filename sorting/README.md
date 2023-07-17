@@ -306,9 +306,17 @@ heapSort():
 
 추가적인 메모리를 필요로하지 않으면서 $O(NlogN)$의 시간 복잡도를 보장한다.
 
+> 1억 개 배열 테스트
+>
+> ![heapVsQuick](./img/heapVsQuick.png)
+
 ### 단점
 
 이상적인 경우에 다른 $O(NlogN)$의 시간 복잡도를 가진 정렬과 비교했을 때 시간이 더 오래 걸린다.
+
+> 10만 개 배열 테스트
+>
+> ![heapVsQuick2](./img/heapVsQuick2.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
