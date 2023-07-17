@@ -54,13 +54,17 @@ selectionSort(A[], n):
 
 정렬을 위한 비교 횟수는 많지만 교환 횟수가 적기 때문에 교환이 많이 이루어져야 하는 상황에서 효율적으로 사용될 수 있다. (내림차순 to 오름차순)
 
-![selVsQuick](./img/selVsQuick.png)
+> 10만 개 배열 테스트
+>
+> ![selVsQuick](./img/selVsQuick.png)
 
 ### 단점
 
 정렬을 위한 비교 횟수가 많으며, $O(N^2)$이라는 시간 복잡도를 갖기 때문에 많은 데이터를 정렬해야 하는 경우에 불리하다.
 
-![selVsQuick2](./img/selVsQuick2.png)
+> 10만 개 배열 테스트
+>
+> ![selVsQuick2](./img/selVsQuick2.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
@@ -100,7 +104,9 @@ bubbleSort(A[]):
 
 시간 복잡도가 $O(N^2)$으로 굉장히 비효율적이다.
 
-![bubVsQuick](./img/bubVsQuick.png)
+> 10만 개 배열 테스트
+>
+> ![bubVsQuick](./img/bubVsQuick.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
@@ -143,7 +149,9 @@ InsertionSort(A[]):
 
 시간 복잡도가 $O(N^2)$으로 정렬할 배열의 크기가 크다면 매우 불리하다.
 
-![insVsQuick](./img/insVsQuick.png)
+> 10만 개 배열 테스트
+>
+> ![insVsQuick](./img/insVsQuick.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
@@ -205,7 +213,9 @@ merge(A[], p, q, r):
 
 무조건 절반씩 분할해가면서 정렬하기 때문에 항상 $O(N * logN)$의 시간 복잡도를 보장한다.
 
-![merVsQuick](./img/merVsQuick.png)
+> 10만 개 배열 테스트
+>
+> ![merVsQuick](./img/merVsQuick.png)
 
 ### 단점
 
@@ -265,13 +275,17 @@ partition(A[], p, r):
 
 일반적인 상황에서 평균적으로 $O(N*logN)$의 시간이 소요되어 매우 빠르게 정렬할 수 있다. 또한 재귀 호출에 의한 스택 메모리를 제외하고 추가적인 메모리가 거의 필요하지 않다.
 
-![selVsQuick2](./img/selVsQuick2.png)
+> 10만 개 배열 테스트
+>
+> ![selVsQuick2](./img/selVsQuick2.png)
 
 ### 단점
 
 이미 정렬되어 있거나, 동일한 원소가 많이 존재하는 경우에 시간이 오래 걸린다. 최악의 경우 $O(N^2)$의 시간이 소요된다.
 
-![selVsQuick](./img/selVsQuick.png)
+> 10만 개 배열 테스트
+>
+> ![selVsQuick](./img/selVsQuick.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
