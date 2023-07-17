@@ -54,9 +54,13 @@ selectionSort(A[], n):
 
 정렬을 위한 비교 횟수는 많지만 교환 횟수가 적기 때문에 교환이 많이 이루어져야 하는 상황에서 효율적으로 사용될 수 있다. (내림차순 to 오름차순)
 
+![selVsQuick](./img/selVsQuick.png)
+
 ### 단점
 
 정렬을 위한 비교 횟수가 많으며, $O(N^2)$이라는 시간 복잡도를 갖기 때문에 많은 데이터를 정렬해야 하는 경우에 불리하다.
+
+![selVsQuick](./img/selVsQuick2.png)
 
 <p align="right"><a href="#top">⬆️Top</a></p>
 
